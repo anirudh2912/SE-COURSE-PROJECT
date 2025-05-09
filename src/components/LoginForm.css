@@ -1,0 +1,112 @@
+.login-page {
+    display: flex;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .left-panel {
+    flex: 1;
+    background-color: #2e2eb8;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .left-panel h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  
+  .left-panel p {
+    font-size: 20px;
+    margin: 5px 0;
+  }
+  
+  .right-panel {
+    flex: 1;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .right-panel h2 {
+    font-size: 30px;
+    color: #2e2eb8;
+    margin-bottom: 5px;
+  }
+  
+  .right-panel h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #2e2eb8;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .signup-text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .signup-link {
+    color: #2e2eb8;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .user-type-toggle {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    justify-content: center;
+  }
+  .user-type-toggle button {
+    padding: 10px 28px;
+    border-radius: 8px;
+    border: 2px solid #0073b1;
+    background: #fff;
+    color: #0073b1;
+    font-size: 1.08rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    outline: none;
+  }
+  .user-type-toggle button.active {
+    background: linear-gradient(90deg, #0073b1 0%, #004080 100%);
+    color: #fff;
+    border: 2px solid #004080;
+  }
+  .user-type-toggle button:hover:not(.active) {
+    background: #f0f8ff;
+    border-color: #0073b1;
+  }
+  

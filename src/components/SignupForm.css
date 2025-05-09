@@ -1,0 +1,138 @@
+/* src/components/SignupForm.css */
+
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+}
+
+.left-panel, .right-panel {
+  flex: 1;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-panel {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+}
+
+.left-panel h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.left-panel p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.right-panel {
+  background-color: white;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.05);
+  padding: 50px;
+}
+
+.right-panel h2 {
+  color: #004080;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.right-panel h3 {
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+form input {
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #0077cc;
+  box-shadow: 0 0 5px rgba(0, 119, 204, 0.3);
+  outline: none;
+}
+
+form button {
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #004080;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0066cc;
+}
+
+.error-message {
+  background-color: #ffe0e0;
+  color: #cc0000;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.signup-text {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.signup-link {
+  color: #004080;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+.signup-link:hover {
+  color: #0066cc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-page {
+    flex-direction: column;
+  }
+
+  .left-panel, .right-panel {
+    padding: 30px;
+    border-radius: 0;
+  }
+
+  .right-panel {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    box-shadow: none;
+  }
+}
